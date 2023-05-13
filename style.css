@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
+
+:root {
+  --main-color: #89002a;
+  --second-color: #ffe4e5;
+}
+body {
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 75%;
+}
+body header nav svg {
+  width: 15rem;
+}
+body header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 50%;
+}
+body header nav ul a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-left: 3rem;
+  padding: 1rem;
+  color: var(--main-color);
+}
+body header nav ul a:hover {
+  font-size: 1.25rem;
+  color: #000;
+  transition: all 0.1s ease;
+}
+body header nav ul a li {
+  list-style: none;
+}
+
+/* MAIN */
+body main {
+  padding: 5rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+}
+
+/* SECTION 1 */
+body main article section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main article section img {
+  border-radius: 1rem;
+  -webkit-box-shadow: 7px 9px 19px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 9px 19px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 9px 19px 2px rgba(0, 0, 0, 0.75);
+}
+body main article section aside {
+  width: 50%;
+}
+body main article section aside div h1 {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 4rem;
+  color: var(--main-color);
+}
+body main article section aside div h5 {
+  margin: -0.75rem 0 0 0;
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--second-color);
+  background: var(--main-color);
+  width: 25%;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+body main article section aside p {
+  margin: 0;
+  padding: 1.5rem 1rem;
+  font-size: 1.35rem;
+}
+
+/* SECTION 2 */
+body main article section#sc-quote {
+  padding: 5rem 0 3rem 0;
+}
+body main article section#sc-quote p {
+  font-size: 3rem;
+  text-align: center;
+}
+body main article section#sc-quote p span {
+  color: var(--main-color);
+}
+
+/* FOOTER */
+body footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  height: 6.75rem;
+}
+body footer p {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+body footer p a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+/* SECTION (ABOUT) SUCCESS */
+body main article section#success{
+  padding: 3rem 0 5rem 0;
+}
+body main article section#success img{
+  width: 40%;
+}
+body main article section#success aside{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+body main article section#success aside ol li{
+  font-size: 1.25rem;
+  padding: 0 1rem 0.75rem 0;
+}
+
+/* SECTION (ABOUT) DISCOURSE */
+body main article section#discourse aside {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+body main article section#discourse {
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+body main article section#discourse aside div {
+  width: 33%;
+  background-color: #efefef;
+  height: 20rem;
+  border-radius: 20px;
+  padding: 1.5rem 1.5rem;
+  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #d3d3d3;
+}
+body main article section#discourse aside div h4 {
+  font-size: 2rem;
+  margin: 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--main-color);
+}
+
+/* SECTION (ABOUT) MİRAS */
+body main article section#sc-last{
+  padding: 5rem 0 5rem 0;
+  justify-content: start;
+}
+body main article section#sc-last img{
+  width: 50%;
+}
+body main article section#sc-last aside{
+  margin: 0 0 0 5rem;
+}
+body main article section#sc-last aside h3{
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--main-color);
+}
+body main article section#sc-last aside p{
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  body header nav{
+    flex-direction: column;
+  }
+  body main article section{
+    flex-direction: column;
+  }
+  body main article section img{
+    width: 75%;
+    margin: 0 0 1rem 0;
+  }
+  body main article section aside{
+    width: 100%;
+  }
+  body main article section aside div h5{
+    width: 50%;
+  }
+  body main article section#success aside{
+    width: 100%;
+  }
+  body main article section#success img{
+    width: 75%;
+  }
+  body main article section#discourse aside{
+    flex-direction: column;
+  }
+  body main article section#discourse aside div{
+    width: 75%;
+    margin: 1.5rem 0;
+    height: 25rem;
+  }
+  body main article section#sc-last img{
+    width: 75%;
+  }
+  body main article section#sc-last aside{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-self:center;
+    width: 100%;
+    margin: 3rem 0;
+  }
+}
