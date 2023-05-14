@@ -222,6 +222,9 @@ body main article section#sc-last aside p{
   body main article section aside{
     width: 100%;
   }
+  body main article section aside div h1{
+    font-size: 3rem;
+  }
   body main article section aside div h5{
     width: 50%;
   }
@@ -238,6 +241,10 @@ body main article section#sc-last aside p{
     width: 75%;
     margin: 1.5rem 0;
     height: 25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   body main article section#sc-last img{
     width: 75%;
@@ -249,5 +256,46 @@ body main article section#sc-last aside p{
     justify-self:center;
     width: 100%;
     margin: 3rem 0;
+  }
+}
+@media screen and (max-width: 400px){
+  body header nav ul {
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
+  body header nav ul a {
+    margin: 0;
+  }
+  body main article section img{
+    width: 100%;
+  }
+  body main article section aside div h1{
+    font-size: 2rem;
+  }
+  body main article section aside div h5{
+    font-size: 1.5rem;
+    width: 33%;
+    margin-top: -0.25rem;
+  }
+  body main article{
+    width: 90%;
+  }
+  body main article section#success img{
+    width: 100%;
+  }
+  body main article section#discourse aside div{
+    height: 30rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main article section#discourse aside div h4{
+    font-size: 1.5rem;
+  }
+  body main article section#sc-last img{
+    width: 100%;
   }
 }
