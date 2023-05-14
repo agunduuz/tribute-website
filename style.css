@@ -281,6 +281,9 @@ body main article section#sc-last aside p{
   body main article{
     width: 90%;
   }
+  body main article section#sc-quote p{
+    font-size: 2rem;
+  }
   body main article section#success img{
     width: 100%;
   }
